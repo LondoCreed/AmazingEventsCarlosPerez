@@ -1,0 +1,39 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.tam{
+    height: 30vh;
+}
+.ban{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ctam{
+    max-width: 70vw;
+}
+.imgpv{
+    max-width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.card-text{
+    min-height: 100px;
+}
+
+.imgcard{
+    min-height: 250px;
+}
+
+.cardTamDetail{
+    width: 60%;
+   
+}
