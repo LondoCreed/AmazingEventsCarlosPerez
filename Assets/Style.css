@@ -31,9 +31,28 @@
 
 .imgcard{
     min-height: 250px;
+    object-fit: cover;
 }
 
 .cardTamDetail{
-    width: 60%;
-   
+    width: 80%;
+    margin: 0 auto;
 }
+
+.msj{
+    margin-top: 7%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ficon{
+    width: 45px;
+}
+
+#contenedorDetails{
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+

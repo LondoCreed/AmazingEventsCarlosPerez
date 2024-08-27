@@ -206,7 +206,7 @@ let TarjetasIncial = '' //Limpieza de contenedor
 // Condicionamos que si el arreglo llega a estar vacio nos de un mensaje amable, esto llega a suceder aplicando filtros.
 if (events.length === 0) {
   contenido.innerHTML = `
-    <p>Sorry, no matches were found within the requested parameters.</p>
+    <p class = "msj">Sorry, no matches were found within the requested parameters.</p>
   `;
 } else {
   //Iteramos el array y por cada elementos creamos una tarjeta con los datos de cada evento
@@ -244,7 +244,7 @@ let chekeados = (cheks = data.events) =>{
       categoriasDuplicadas.push(chek.category);
       //Crea los cheks en base a el nuevo array sin duplicidad
       let divChek = document.createElement('div');
-      divChek.className = 'form-check justify-content-center d-flex gap-1'
+      divChek.className = 'form-check justify-content-center d-flex gap-1 ms-4'
       let idNew = categoriasDuplicadas.indexOf(chek.category)
       divChek.innerHTML = `
         <input class="form-check-input" type="checkbox" value="${chek.category}" id="flexCheck${idNew}" />
@@ -260,7 +260,7 @@ let chekeados = (cheks = data.events) =>{
 
   //debido a que se limpia el contenedor antes de generar, mi busqueda se borraba, solucione desplegandola junto a los cheks(alfinal)
   let form = document.createElement('form')
-  form.className = 'xd d-flex'
+  form.className = 'xd d-flex me-3'
   form.innerHTML = `
     <input class="form-control me-2" type="search" id="busquedaTexto" placeholder="Write to me please for" aria-label="Search" />
     <button class="xd btn btn-outline-danger" type="button" id="buscar">

@@ -210,14 +210,14 @@ let generar = document.getElementById('contenedorDetails')
 if (evento) {
   //Se desplega la tarjeta con los datos necesarios
     let detalleEventos = `
-      <div class="d-flex container-fluid gap-2 flex-wrap justify-content-center align-items-center pt-5">
+      <div class="d-flex container-fluid gap-2 flex-wrap justify-content-center align-items-center">
         <div class="card mb-3 cardTamDetail">
           <div class="row">
             <div class="col-md-4">
               <img class="imgpv img-fluid rounded-start" src="${evento.image}" alt="${evento.name}">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
+              <div class="card-body ">
                 <h5 class="card-title">${evento.name}</h5>
                 <p>${evento.description}</p>
                 <p>${evento.date}</p>
