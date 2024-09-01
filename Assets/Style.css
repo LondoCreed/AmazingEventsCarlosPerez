@@ -56,3 +56,43 @@
     align-items: center; 
 }
 
+table {
+    border-collapse: collapse; 
+    width: 100%;
+    
+  }
+  
+  th, td {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: center;
+    
+    
+  }
+
+  tbody tr:hover {
+    border: 5px solid black;
+    
+    
+  }
+
+  .tableM{
+    background-color: white;
+   
+
+  }
+  .expected{
+    border: 3px solid black;
+    background-color: rgb(67, 64, 64);
+    color: white;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+

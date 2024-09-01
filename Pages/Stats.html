@@ -97,67 +97,64 @@
       </div>
       <!-- Aca termina el carrusel -->
       
-      <div class="d-flex container-fluid gap-2 flex-wrap justify-content-center pt-3">
-        <table class="table table-bordered ">
-            <thead>
-                <tr>
-                    <th class="bg-warning" colspan="3">Events Statistics</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Events with highest % od assistance</td>
-                    <td>Events with lowest % od assistance</td>
-                    <td>Events with large capacity</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-          <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th class="bg-warning" colspan="3">Upcoming events statistics by category </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>categories</td>
-                    <td>Revenues</td>
-                    <td>Porcentaje of assistance</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-          <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th class="bg-warning" colspan="3">Past events statistics by category</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>categories</td>
-                    <td>Revenues</td>
-                    <td>Porcentaje of assistance</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
+      <div class="d-flex container-fluid gap-2 flex-wrap justify-content-center  p-3">
+        <table id="generalTable" class="tableM table-bordered ">
+          <thead>
+            <tr>
+              <th class="bg-warning" colspan="3">Events Statistics</th>
+            </tr>
+            <tr class = "expected">
+              <td>Events with highest % of assistance</td>
+              <td>Events with lowest % of assistance</td>
+              <td>Events with large capacity</td>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+        
+        <table id="upcomingTable" class="tableM table-bordered">
+          <thead>
+            <tr>
+              <th class="bg-warning" colspan="3">Upcoming events statistics by category </th>
+            </tr>
+            <tr class = "expected">
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of assistance</td>
+            </tr>
+          </thead>
+          <tbody>
+           
+            <!-- Aquí se llenarán las filas dinámicamente -->
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+        
+        <table id="pastTable" class="tableM table-bordered">
+          <thead>
+            <tr>
+              <th class="bg-warning" colspan="3">Past events statistics by category</th>
+            </tr>
+            <tr class = "expected">
+              <td>Categories</td>
+              <td>Revenues</td>
+              <td>Percentage of assistance</td>
+            </tr>
+          </thead>
+          <tbody>
+           
+            <!-- Aquí se llenarán las filas dinámicamente -->
+          </tbody>
+          <tfoot></tfoot>
+        </table>
       </div>
     </main>
     <footer>
@@ -175,6 +172,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+      <script type="module" src="../scrips/stats.js"></script>
   </div>
 </body>
 
